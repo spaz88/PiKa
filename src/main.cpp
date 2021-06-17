@@ -6,15 +6,18 @@
 #include "ultrason.h"
 #include "servo_mot.h"
 #include "infrarouge.h"
+#include "ir_remote.h"
 
 mouvement move;
 moteur roue;
 ultrason son;
 mon_servo servo;
 infrarouge infra;
+remote remote;
 
 void setup(void)
 {
+  remote.setup();
   infra.setup();
   servo.setup();
   roue.setup_pin();
@@ -24,8 +27,7 @@ void setup(void)
 
 
 void loop(void){
-  infra.detectionMilieu();
-  delay(200);
+  remote.commande();
   /*digitalWrite(PINT_Moteur_MARCHE_TOUS, HIGH);
   roue.avance();
   delay(200);
