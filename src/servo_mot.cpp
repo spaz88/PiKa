@@ -9,24 +9,50 @@ void mon_servo::setup(){
 }
 
 void mon_servo::droite(){
-  while(myservo.read()!= 0){
+  for(int i = 179; i > 0; i--){
+    myservo.write(i);
     son1.distance();
-  myservo.slowmove(0,20);
- }
- son1.distance();
+    delay(25);
+  }
 }
+
+
 
 void mon_servo::gauche(){
-  while(myservo.read()!= 180){
-  myservo.slowmove(180,20);
- }
- son1.distance();
-
+  for(int i = 89; i < 180; i++){
+    myservo.write(i);
+    son1.distance();
+    delay(25);
+  }
 }
 
+
 void mon_servo::centre(){
-  while(myservo.read()!= 90){
-  myservo.slowmove(90,20);
- }
- son1.distance();
+  for(int i = 0; i < 90; i++){
+    myservo.write(i);
+    son1.distance();
+    delay(25);
+  }
+}
+
+void mon_servo::balayement(){
+
+  gauche();
+  droite();
+  centre();
+  /*for(int i = 89; i < 180; i++){
+    myservo.write(i);
+    son1.distance();
+    delay(50);
+}
+for(int i = 179; i > 0; i--){
+  myservo.write(i);
+  son1.distance();
+  delay(50);
+}
+for(int i = 0; i < 90; i++){
+  myservo.write(i);
+  son1.distance();
+  delay(50);
+}*/
 }

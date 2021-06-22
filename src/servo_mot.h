@@ -12,5 +12,6 @@ public:
   void droite();
   void gauche();
   void centre();
+  void balayement();
   VarSpeedServo myservo;
 };

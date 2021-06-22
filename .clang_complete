@@ -1,13 +1,16 @@
 -IC:/Users/installateur/Documents/PlatformIO/Projects/PiKa/include
 -IC:/Users/installateur/Documents/PlatformIO/Projects/PiKa/src
 -IC:/Users/installateur/Documents/PlatformIO/Projects/PiKa/lib/HCSR04-ultrasonic-sensor-lib/src
--IC:/Users/installateur/Documents/PlatformIO/Projects/PiKa/lib/Servo/src
+-IC:/Users/installateur/Documents/PlatformIO/Projects/PiKa/lib/VarSpeedServo
 -IC:/Users/installateur/Documents/PlatformIO/Projects/PiKa/lib/Adafruit_ADS1X15
 -IC:/Users/installateur/Documents/PlatformIO/Projects/PiKa/lib/Adafruit_BusIO
 -IC:/Users/installateur/Documents/PlatformIO/Projects/PiKa/lib/SPI
 -IC:/Users/installateur/.platformio/packages/framework-arduino-avr/libraries/Wire/src
+-IC:/Users/installateur/Documents/PlatformIO/Projects/PiKa/lib/IRremote-2.7.0/src
 -IC:/Users/installateur/.platformio/packages/framework-arduino-avr/cores/arduino
 -IC:/Users/installateur/.platformio/packages/framework-arduino-avr/variants/standard
+-IC:/Users/installateur/Documents/PlatformIO/Projects/PiKa/lib/Arduino-IRremote
+-IC:/Users/installateur/Documents/PlatformIO/Projects/PiKa/lib/Servo/src
 -IC:/Users/installateur/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src
 -IC:/Users/installateur/.platformio/packages/framework-arduino-avr/libraries/HID/src
 -IC:/Users/installateur/.platformio/packages/framework-arduino-avr/libraries/SPI/src

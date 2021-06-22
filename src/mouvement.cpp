@@ -1,6 +1,8 @@
 #include "mouvement.h"
 #include "moteur.h"
 
+moteur roue1;
+
 void mouvement::setup(){
   if (!ads.begin()) {
     Serial.println("Failed to initialize ADS.");
@@ -21,10 +23,12 @@ int mouvement::direction(){
       }
       if (adc1 > 150){
         Serial.println("gauche");//2
+        roue1.tourner_droite(127);
         return 2;
       }
       if (adc2 > 150){
         Serial.println("droite");//3
+        roue1.tourner_gauche(127);
         return 3;
       }
       if (adc3 > 150){
@@ -34,10 +38,14 @@ int mouvement::direction(){
       }
       if (adc0 > 150 && adc1 > 150){
         Serial.println("avant gauche");//4
+        roue1.tourner_gauche(127);
+        roue1.tourner_droite(70);
         return 4;
       }
       if (adc0 > 150 && adc2 > 150){//5
         Serial.println("avant droite");
+        roue1.tourner_gauche(70);
+        roue1.tourner_droite(127);
         return 5;
       }
       /*else{

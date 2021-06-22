@@ -10,9 +10,10 @@ class moteur{
 
 public:
   void setup_pin();
-  void avance();
-  void recule();
-  void tourner_droite();
-  void tourner_gauche();
+  void avance(int);
+  void recule(int);
+  void tourner_droite(int);
+  void tourner_gauche(int);
+  void arret();
 
 };
