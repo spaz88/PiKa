@@ -28,23 +28,6 @@ void setup(void)
 
 void loop(void){
   remote.commande();
-  /*digitalWrite(PINT_Moteur_MARCHE_TOUS, HIGH);
-  roue.avance();
-  delay(200);
   move.direction();
-  if(move.direction() == 2){
-    roue.tourner_droite();
-  }
-  if(move.direction() == 3){
-    roue.tourner_gauche();
-  }
-  if(move.direction() == 4){
-    roue.tourner_droite();
-  }
-  if(move.direction() == 3){
-    roue.tourner_gauche();
-  }*/
-
-
 
 }

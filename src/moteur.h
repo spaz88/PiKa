@@ -14,6 +14,7 @@ public:
   void recule(int);
   void tourner_droite(int);
   void tourner_gauche(int);
+  void demi_tour();
   void arret();
 
 };

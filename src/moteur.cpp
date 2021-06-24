@@ -18,13 +18,13 @@ void moteur::recule(int vitesse){
   digitalWrite(PIN_Moteur_GA_Sens, LOW);
 }
 
-void moteur::tourner_droite(int vitesse){
+void moteur::tourner_gauche(int vitesse){
   digitalWrite(PIN_Moteur_GAUCHE, LOW);
   analogWrite(PIN_Moteur_DROITE, vitesse);
   digitalWrite(PIN_Moteur_DR_Sens, HIGH);
 }
 
-void moteur::tourner_gauche(int vitesse){
+void moteur::tourner_droite(int vitesse){
   digitalWrite(PIN_Moteur_DROITE, LOW);
   analogWrite(PIN_Moteur_GAUCHE, vitesse);
   digitalWrite(PIN_Moteur_GA_Sens, HIGH);
@@ -39,4 +39,10 @@ void moteur::avance(int vitesse){
 
 void moteur::arret(){
   digitalWrite(PINT_Moteur_MARCHE_TOUS, LOW);
+}
+
+void moteur::demi_tour(){
+  digitalWrite(PIN_Moteur_GAUCHE, LOW);
+  analogWrite(PIN_Moteur_DROITE, 127);
+  digitalWrite(PIN_Moteur_DR_Sens, HIGH);
 }

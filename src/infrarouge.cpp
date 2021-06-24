@@ -47,3 +47,11 @@ void infrarouge::detectionDroite(){
     Serial.println("Objet detecter");
   }
 }
+
+void infrarouge::detection_sol(){
+
+}
+
+void infrarouge::suivi_ligne(){
+  
+}

@@ -13,5 +13,7 @@ public:
   void detectionMilieu();
   void detectionGauche();
   void detectionDroite();
-  int hasObstacle = HIGH;
+  void detection_sol();
+  void suivi_ligne();
+  int hasObstacle;
 };
